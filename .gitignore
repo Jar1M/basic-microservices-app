@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/java,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,linux
+# Created by https://www.toptal.com/developers/gitignore/api/java,maven
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,maven
 
 ### Java ###
 # Compiled class file
@@ -27,19 +27,28 @@
 hs_err_pid*
 replay_pid*
 
-### Linux ###
-*~
+# language server
+jdt.ls-java-project
+.metadata
 
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
 
-# KDE directory preferences
-.directory
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-# End of https://www.toptal.com/developers/gitignore/api/java,linux
+# End of https://www.toptal.com/developers/gitignore/api/java,maven
+ End of https://www.toptal.com/developers/gitignore/api/java,linux
